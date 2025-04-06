@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selamat datang di BLEKJAN – portofolio kreatif visual storyteller dan digital creator.">
+  <title>Home | BLEKJAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root {
+      --primary: #111;
+      --bg: #f9f9f9;
+      --accent: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 2px solid var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    header h1 a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      flex: 1;
+      max-width: 1024px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      color: var(--accent);
+    }
+    .hero img {
+      width: 100%;
+      max-width: 200px;
+      margin-top: 2rem;
+      border-radius: 12px;
+      border: 2px solid var(--primary);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--accent);
+      background-color: #fdfdfd;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">BLEKJAN</a></h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Halo, aku BLEKJAN</h2>
+      <p>Seorang visual storyteller dan digital creator yang suka bereksperimen dengan fotografi, video, desain, dan banyak hal lain yang estetik.</p>
+      <img src="ojan profile.jpg" alt="Potret karya BLEKJAN">
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Fauzan Muhammad. All rights reserved.</p>
+  </footer>
+</body>
+</html>

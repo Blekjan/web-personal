@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | BLEKJAN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111;
+      --bg: #f9f9f9;
+      --accent: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #fff;
+      border-bottom: 2px solid var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    header a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      flex: 1;
+      max-width: 768px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    .about-section h2 {
+      font-size: 2.25rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .about-photo {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 2px solid var(--primary);
+      margin-bottom: 2rem;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .photo-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--accent);
+      background-color: #fdfdfd;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">BLEKJAN</a></h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h2>Tentang BLEKJAN</h2>
+      <p>BLEKJAN adalah seorang mahasiswa aktif Pendidikan Multimedia di Universitas Pendidikan Indonesia yang berdomisili di Bandung. Sejak kecil, ia selalu tertarik dengan dunia visual – dari menggambar, fotografi, hingga membuat video pendek. BLEKJAN kini aktif dalam berbagai kegiatan internal atau eksternal kampus.</p>
+      <p>Filosofinya sederhana: visual yang baik bukan hanya soal estetika, tapi juga soal cerita di baliknya. Melalui karya-karyanya, BLEKJAN ingin menyampaikan perasaan, suasana, dan momen yang bisa dirasakan oleh siapa saja yang melihatnya.</p>
+      <img src="ojan almet.jpg" alt="BLEKJAN" class="about-photo">
+
+      <div class="photo-grid">
+        <img src="ojan board.jpg" alt="Foto 1">
+        <img src="ojan foto.jpg" alt="Foto 2">
+        <img src="ojan gntg.jpg" alt="Foto 3">
+        <img src="ojan hima.jpg" alt="Foto 4">
+        <img src="ojan smk.jpg" alt="Foto 5">
+        <img src="ojan LO.jpg" alt="Foto 6">
+        <img src="ojan mic.jpg" alt="Foto 7">
+        <img src="ojan pkl.jpg" alt="Foto 8">
+      </div>
+
+      <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Pendidikan</h3>
+<div style="margin-bottom: 2rem;">
+  <p><strong>2020 – 2023</strong><br>SMK Negeri 14 Bandung – Multimedia</p>
+  <p><strong>2023 – Sekarang</strong><br>S1 Pendidikan Multimedia, Universitas Pendidikan Indonesia</p>
+</div>
+
+<h3 style="margin-top: 2rem; margin-bottom: 1rem;">Pengalaman</h3>
+<div>
+  <p><strong>2022</strong><br>Staff Public Relation – PT Neuronworks Indonesia</p>
+  <p><strong>2022 – Sekarang</strong><br>Staff Publikasi dan Dokumentasi – Karang Taruna</p>
+  <p><strong>2024</strong><br>Staff Media dan Informasi – HIMAPEDIA</p>
+  <p><strong>2024</strong><br>LO Arash Buana – Pedia Fest</p>
+  <p><strong>2025</strong><br>Ketua Departemen Minat & Bakat – HIMAPEDIA</p>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fauzan Muhammad. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="Id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hubungi BLEKJAN – visual storyteller dan digital creator. Ajukan kolaborasi atau sekadar sapa lewat form kontak.">
+  <title>Contact | BLEKJAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root {
+      --primary: #111;
+      --bg: #f9f9f9;
+      --accent: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 2px solid var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    header h1 a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    main {
+      flex: 1;
+      max-width: 768px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .contact-section h2 {
+      font-size: 2.25rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .contact-section p {
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+    input:focus, textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+    button {
+      background: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--accent);
+      background-color: #fdfdfd;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">BLEKJAN</a></h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-section">
+      <h2>Hubungi Aku</h2>
+      <p>Kamu bisa menghubungi aku melalui form di bawah ini untuk kerja sama, pertanyaan, atau sekadar ngobrol santai.</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Nama lengkap" required>
+        <input type="email" name="email" placeholder="Alamat email" required>
+        <textarea name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <div style="margin-top: 2rem;">
+        <p><strong>Atau hubungi langsung lewat:</strong></p>
+        <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+          <li><strong>📱 WhatsApp:</strong> <a href="https://wa.me/6281321795455" target="_blank" style="color: var(--primary); text-decoration: underline;">+62 813-2179-5455</a></li>
+          <li><strong>📧 Email:</strong> <a href="mailto:fauzanmuhammad@upi.edu" style="color: var(--primary); text-decoration: underline;">fauzanmuhammad@upi.edu</a></li>
+          <li><strong>📸 Instagram:</strong> <a href="https://instagram.com/zan.mnr" target="_blank" style="color: var(--primary); text-decoration: underline;">@zan,mnr</a></li>
+        </ul>
+      </div>
+      
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Fauzan Muhammad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
